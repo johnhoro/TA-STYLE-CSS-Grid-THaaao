@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  background-color: #3a4a4f;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+a {
+  color: #0095be;
+}
+
+h2,
+a {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.img-container {
+  width: 100%;
+  text-align: center;
+}
+
+.img-container img {
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.item {
+  padding: 0.5rem;
+  background-color: white;
+  border-top: 5px solid #0095be;
+  border-radius: 5px 5px 0 0;
+}
+
+.item p {
+  padding-bottom: 0.7rem;
+  font-size: 1.1rem;
+  color: #251515;
+}
+
+.item button {
+  border: none;
+  color: red;
+  background-color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.item h2 {
+  color: #251515;
+}
+
+.item1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  border-top: 5px solid #0095be;
+  border-radius: 5px 5px 0 0;
+}
+
+.item1 .nav {
+  color: #0095be;
+  padding: 0.5rem;
+}
+
+.item7 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item8 {
+  grid-column: span 2;
+  grid-row: span 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item8 button {
+  text-align: left;
+}
+
+.item9 {
+  grid-column: span 2;
+  grid-row: span 2;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item9 p {
+  padding-left: 0.5rem;
+}
+
+.item9 h2 {
+  padding-left: 0.5rem;
+}
+
+.item9 button {
+  text-align: start;
+  width: 100%;
+  background-color: red;
+  padding: 0.5rem;
+  color: white;
+}
+
+.item10 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.item10 .graph {
+  text-align: center;
+}
+
+.item10 .graph img {
+  width: 180px;
+  height: 180px;
+}
+
+.item11 {
+  grid-column: span 2;
+  grid-row: span 2;
+  padding: 0;
+}
+
+.item11 h2 {
+  padding: 0.5rem;
+  background-color: #0095be;
+  color: white;
+}
+
+.item11 p,
+.item11 button {
+  padding: 0.5rem;
+}
+
+.item12 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 520px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */
